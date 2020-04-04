@@ -4,28 +4,70 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Your page title</title>
+    <title>Lab3</title>
 
     <link
       rel="stylesheet"
       href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
     />
+    <style>
+      .body {
+        background-color: #ececcd;
+      }
+      .navbar {
+        background-color: rgb(190, 228, 240);
+        font-family: fantasy;
+        font: outline;
+        font-size: 29px;
+        color: white;
+      }
+      .img {
+        width: 400px;
+        margin-top: 50px;
+      }
+    </style>
   </head>
 
-  <body>
-    <div class="pure-menu pure-menu-horizontal">
-      <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a>
+  <body class="body">
+    <div class="pure-menu pure-menu-horizontal navbar">
+      <a href="#" class="pure-menu-heading pure-menu-link">Home</a>
+      <a
+        href="https://www.google.com/?hl=zh-tw"
+        class="pure-menu-heading pure-menu-link"
+        >Google</a
+      >
       <ul class="pure-menu-list">
         <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">News</a>
+          <a href="https://github.com/" class="pure-menu-link">Github</a>
         </li>
         <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Sports</a>
-        </li>
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Finance</a>
+          <a href="https://www.facebook.com/" class="pure-menu-link"
+            >Facebook</a
+          >
         </li>
       </ul>
+    </div>
+    <div class="pure-u-1-3">
+      <center>
+        <img src="IMG_4976.jpg" class="img" />
+      </center>
+    </div>
+    <div class="pure-u-1-3">
+      <h1
+        style="
+          margin-top: 50px;
+          font-family: NSimSun;
+          color: rgb(58, 129, 16);
+          font-weight: bold;
+        "
+      >
+        田園趣
+      </h1>
+      <p style="font-family: NSimSun;">
+        過年才會到的田園，在此享受泥土與大地的氣味。<br /><br />
+        這是只有屬於我們的時刻，沒有手機、沒有耳機，的日子。<br />
+        只有泥土、小蟲、各種不同樣子不同名子的菜，有了舅舅的灌溉，才能讓我們彼此享受這專注的片刻。
+      </p>
     </div>
   </body>
 </html>
