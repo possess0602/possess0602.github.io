@@ -30,13 +30,14 @@
     <script>
       $(document).ready(function () {
         $("button").click(function () {
-          var div = $("div");
+          var div = $("button");
           div.animate({ height: "300px", opacity: "0.4" }, "slow");
           div.animate({ width: "300px", opacity: "0.8" }, "slow");
           div.animate({ height: "100px", opacity: "0.4" }, "slow");
           div.animate({ width: "100px", opacity: "0.8" }, "slow");
           div.animate({ height: "70px", opacity: "0.4" }, "fast");
-          div.animate({ width: "600px", opacity: "1.0" }, "slow");
+          div.animate({ width: "300", opacity: "1.0" }, "slow");
+          $("#together").append("<p>一起放下手機連享受田園之樂</p>");
         });
       });
     </script>
@@ -85,6 +86,7 @@
         這是只有屬於我們的時刻，沒有手機、沒有耳機，的日子。<br />
         只有泥土、小蟲、各種不同樣子不同名子的菜，有了舅舅的灌溉，才能讓我們彼此享受這專注的片刻。
       </p>
+      <h1 id="together" style="color: coral;"></h1>
     </div>
   </body>
 </html>
