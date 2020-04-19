@@ -26,6 +26,20 @@
         margin-top: 50px;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var div = $("div");
+          div.animate({ height: "300px", opacity: "0.4" }, "slow");
+          div.animate({ width: "300px", opacity: "0.8" }, "slow");
+          div.animate({ height: "100px", opacity: "0.4" }, "slow");
+          div.animate({ width: "100px", opacity: "0.8" }, "slow");
+          div.animate({ height: "70px", opacity: "0.4" }, "fast");
+          div.animate({ width: "600px", opacity: "1.0" }, "slow");
+        });
+      });
+    </script>
   </head>
 
   <body class="body">
@@ -61,8 +75,11 @@
           font-weight: bold;
         "
       >
-        田園趣
+        <button style="background-color: rgb(228, 180, 228);">
+          田園趣(click me)
+        </button>
       </h1>
+
       <p style="font-family: NSimSun;">
         過年才會到的田園，在此享受泥土與大地的氣味。<br /><br />
         這是只有屬於我們的時刻，沒有手機、沒有耳機，的日子。<br />
